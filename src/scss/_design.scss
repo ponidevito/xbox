@@ -1,0 +1,99 @@
+.design {
+  height: 100vh;
+  background-image: url("../img/design/xbox-joystik.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  @include md {
+    background-position: left;
+    padding: 50px 0px;
+    height: 100%;
+  }
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      100% 100% at 50% 0%,
+      rgba(193, 255, 127, 0.1) 0%,
+      rgba(141, 216, 61, 0.1) 100%
+    );
+    z-index: 1;
+  }
+  &__container {
+    max-width: 1080px;
+    height: 100%;
+  }
+
+  &__body {
+    max-width: 533px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include md {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    font-family: HelveticaNeue;
+    font-size: 48px;
+    @include xs {
+      font-size: 44px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+
+  &__undertitle {
+    color: #fff;
+    font-family: HelveticaNeue;
+    font-size: 24px;
+  }
+
+  &__actions {
+    margin-top: 37px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  &__btn {
+    padding: 20px;
+    border-radius: 4px;
+    background: $greenColor;
+    color: #fff;
+    font-family: HelveticaNeue;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include xs {
+      width: 100%;
+    }
+  }
+
+  &__btn-grey {
+    padding: 20px;
+    min-width: 207px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #686c6f 0%, #373a3c 100%);
+    color: #fff;
+    font-family: HelveticaNeue;
+    line-height: 1.3;
+    @include xs {
+      width: 100%;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

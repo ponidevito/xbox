@@ -1,0 +1,86 @@
+.specifications {
+  background-color: #fff;
+  padding-bottom: 110px;
+  @include lg {
+    padding-bottom: 70px;
+  }
+  @include sm {
+    padding-bottom: 30px;
+  }
+  &__container {
+    max-width: 1080px;
+  }
+
+  &__top {
+    text-align: center;
+    &:not(:last-child) {
+      padding-bottom: 47px;
+    }
+  }
+
+  &__title {
+    color: #435766;
+    font-family: HelveticaNeue;
+    font-size: 36px;
+    @include sm {
+        font-size: 26px;
+    }
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 67px;
+    &:not(:last-child) {
+      padding-bottom: 80px;
+      @include lg {
+        padding-bottom: 50px;
+      }
+      @include sm {
+        padding-bottom: 30px;
+      }
+    }
+    @include lg {
+      gap: 30px;
+    }
+    @include sm {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__column {
+    p {
+      color: #435766;
+      font-family: HelveticaNeue;
+      font-size: 21px;
+      line-height: 1.14;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      @include lg {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    @include sm {
+      flex-direction: column;
+    }
+  }
+
+  &__btn {
+    min-width: 235px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 52px;
+    @include sm {
+      min-width: 100%;
+    }
+  }
+}
+

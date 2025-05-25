@@ -1,0 +1,61 @@
+.order {
+  padding: 100px 0px 22px 0px;
+  background: #fff;
+  @include lg {
+    padding: 70px 0px;
+  }
+  @include sm {
+    padding: 50px 0px 0px 0px;
+  }
+  &__container {
+    max-width: 650px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 208px;
+    @include lg {
+      gap: 30px;
+    }
+  }
+
+  &__title {
+    color: #435766;
+    font-family: HelveticaNeue;
+    font-size: 36px;
+    @include xs {
+      font-size: 27px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 14px;
+    @include xs {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__btn {
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-green {
+    padding: 0px 41px;
+    min-width: 170px;
+    @include xs {
+      min-width: 100%;
+    }
+  }
+  .btn-grey {
+    padding: 0px 21px;
+    min-width: 235px;
+    @include xs {
+      min-width: 100%;
+    }
+  }
+}

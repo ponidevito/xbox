@@ -1,0 +1,182 @@
+.exclusive {
+  position: relative;
+  height: 100%;
+  background-image: url("../img/exclusive/call-of-duty.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 97px 0px 140px 0px;
+  @include md {
+    padding: 60px 0px;
+  }
+  @include sm {
+    padding: 30px 0px;
+  }
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(23, 23, 23, 0.5);
+    z-index: 1;
+  }
+  &__top {
+    padding: 0px 15px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title {
+    color: #fff;
+    font-family: HelveticaNeue;
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  &__container {
+    max-width: 100%;
+  }
+
+  &__action {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+  }
+  &__btn {
+    border-radius: 4px;
+    background: linear-gradient(180deg, #686c6f 0%, #373a3c 100%);
+    color: #fff;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 16px 46px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__swiper {
+    margin-top: 55px;
+    padding-left: 65px;
+    @include sm {
+      padding-left: 0;
+    }
+    &:not(:last-child) {
+      margin-bottom: 74px;
+      @include sm {
+        margin-bottom: 30px;
+      }
+    }
+    .swiper-exclusive {
+      overflow: visible;
+    }
+    .swiper-wrapper {
+      align-items: stretch;
+    }
+    .swiper-slide {
+      height: auto !important;
+      transition: all 0.3s ease;
+      overflow: visible;
+      z-index: 1;
+      min-width: 320px;
+      &:hover {
+        z-index: 2;
+      }
+    }
+
+    .slide-exclusive {
+      &__column {
+        border: 1px solid #8dd83d;
+        background: #ffffffe8;
+        display: flex;
+        flex-direction: column;
+        border-radius: 4px;
+        height: 100%;
+        transition: 0.3s ease;
+        will-change: transform;
+        &:hover {
+          background: #fff;
+          @media (min-width: 576px) {
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      &__picture {
+        img {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+
+      &__content {
+        padding: 21px 20px 27px 21px;
+        display: flex;
+        flex-direction: column;
+        gap: 43px;
+        height: 100%;
+      }
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      &__name {
+        color: #435766;
+        font-family: HelveticaNeue;
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      &__text {
+        color: #435766;
+        font-family: HelveticaNeue;
+        font-size: 21px;
+        font-weight: 400;
+        @include lg {
+          font-size: 18px;
+        }
+      }
+
+      &__action {
+        margin-top: auto;
+        text-align: center;
+      }
+
+      &__button {
+        transition: opacity 0.3s ease;
+        opacity: 1; // початково повністю видно
+      }
+    }
+  }
+  .swiper-actions {
+    position: absolute;
+    top: 105px;
+    transform: translate(0, -50%);
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @include md {
+      display: none;
+    }
+  }
+  .swiper-btn-prev {
+    cursor: pointer;
+    margin-left: 55px;
+    svg {
+      transform: rotate(179deg);
+    }
+  }
+  .swiper-btn-next {
+    margin-right: 55px;
+    cursor: pointer;
+  }
+  .swiper-button-disabled {
+    svg {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.hero {
+  &__container {
+    padding: 0px;
+    max-width: 100%;
+  }
+  .hero-swiper {
+    &__slide {
+      position: relative;
+      img {
+        max-width: 100%;
+        width: 100%;
+        @include md {
+          height: 350px;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &__content {
+      position: absolute;
+      right: 273px;
+      top: 50%;
+      transform: translate(0, -50%);
+      display: flex;
+      flex-direction: column;
+      gap: 134px;
+      @media (max-width: 1300px) {
+        gap: 60px;
+      }
+      @include lg {
+        right: 173px;
+      }
+      @include md {
+        gap: 30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        right: auto;
+      }
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__undertitle {
+      font-size: 24px;
+    }
+
+    &__actions {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      @include md {
+        flex-wrap: wrap;
+      }
+    }
+
+    .swiper__actions {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .swiper-btn-prev {
+      cursor: pointer;
+      padding: 20px 20px 20px 57px;
+      svg {
+        transform: rotate(179deg);
+      }
+      @include sm {
+        padding: 20px 20px 20px 30px;
+      }
+    }
+    .swiper-btn-next {
+      cursor: pointer;
+      padding: 20px 57px 20px 20px;
+      @include sm {
+        padding: 20px 30px 20px 20px;
+      }
+    }
+
+    .swiper-button-disabled {
+      svg path {
+        fill: #76a049;
+      }
+    }
+    .swiper-pagination {
+      bottom: 43px !important;
+      @include sm {
+        display: none;
+      }
+    }
+    .swiper-pagination-bullet-active {
+      width: 10px;
+      height: 10px;
+      background-color: #8dd83d !important;
+    }
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      border: 1px solid #8dd83d !important;
+      background-color: transparent;
+      border-radius: 50%;
+      opacity: unset;
+      margin: 0px 5px !important;
+    }
+  }
+}
