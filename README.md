@@ -1,6 +1,6 @@
 # 🎮 Xbox Landing Page
 
-![Xbox Banner](![image](https://github.com/user-attachments/assets/82564ba5-f199-4a4c-ba4a-6bf697f4d3ea) <!-- необов'язково: можна вставити свій скріншот -->
+(![image](https://github.com/user-attachments/assets/82564ba5-f199-4a4c-ba4a-6bf697f4d3ea) <!-- необов'язково: можна вставити свій скріншот -->
 
 Це лендинг, присвячений ігровій консолі Xbox
 
