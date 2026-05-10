@@ -1,20 +1,81 @@
-# Пошаговая инструкция по запуску сборки.
+# 🇺🇦 Покрокова інструкція запуску збірки
 
-## 1 Убедитесь что у вас установлен Node js (проверить можно командой: node --version )
+## 1. Переконайтесь, що у вас встановлений Node.js
 
-    Если его нет, то установить можно по ссылке: https://nodejs.org/en/
+Перевірити можна командою:
 
-## 2 Установите gulp глобально на Ваш ПК:
+```
+node --version
+```
 
-    npm install --global gulp-cli
+Якщо Node.js не встановлений, завантажте його за посиланням:
+https://nodejs.org/en/
 
-    Ссылка на инстуркцию по установке Gulp
-    https://gulpjs.com/docs/en/getting-started/quick-start
+---
 
-## 3 Установите все зависимости комадой:
+## 2. Встановіть Gulp глобально на ваш ПК
 
-    npm install
+```
+npm install --global gulp-cli
+```
 
-## 4 Запустите Сборку
+Інструкція по встановленню Gulp:
+https://gulpjs.com/docs/en/getting-started/quick-start
 
-    gulp
+---
+
+## 3. Встановіть усі залежності
+
+```
+npm install
+```
+
+---
+
+## 4. Запустіть збірку
+
+```
+gulp
+```
+
+---
+
+# 🇬🇧 Step-by-step guide to run the build
+
+## 1. Make sure Node.js is installed
+
+You can check it with:
+
+```
+node --version
+```
+
+If Node.js is not installed, download it here:
+https://nodejs.org/en/
+
+---
+
+## 2. Install Gulp globally on your PC
+
+```
+npm install --global gulp-cli
+```
+
+Gulp installation guide:
+https://gulpjs.com/docs/en/getting-started/quick-start
+
+---
+
+## 3. Install all dependencies
+
+```
+npm install
+```
+
+---
+
+## 4. Run the build
+
+```
+gulp
+```
